@@ -1,0 +1,143 @@
+/**
+ * BASE
+ */
+
+:root {
+    --primary-color: #004b9d;
+    --secondary-color: #d30039;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * GRILLE
+ */
+.row {
+    display: block;
+    width: 100%;
+    font-size: 0;
+}
+
+[class^="col"] {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 16px;
+}
+
+[class^="col"] input,
+[class^="col"] button,
+[class^="col"] textarea,
+[class^="col"] iframe,
+[class^="col"] object,
+[class^="col"] img {
+    max-width: 100%;
+}
+
+.col-1 {
+    width: calc(100% / 12 * 1)
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2)
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3)
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4)
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5)
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6)
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7)
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8)
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9)
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10)
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11)
+}
+
+.col-12 {
+    width: calc(100% / 12 * 12)
+}
+
+/**
+ * ICONES
+ */
+
+.icon {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+
+[class*="icon-social-network"] {}
+
+.icon-social-network-twitter {
+    background-image: url('./img/icons/social-1_logo-twitter.svg');
+}
+.icon-social-network-facebook {
+ background-image: url('./img/icons/social-1_logo-facebook.svg');
+}
+.icon-social-network-instagram {
+    background-image: url('./img/icons/social-1_logo-instagram.svg');
+}
+.icon-social-network-google-plus {
+    background-image: url('./img/icons/social-1_logo-google-plus.svg');
+}
+/**
+ * Elements racines
+ */
+
+#header {
+}
+
+#header .container > * {
+    display: inline-block;
+}
+
+#header .site--logo {
+    height: 72px;
+}
+
+#header .site--title {
+    vertical-align: top;
+    padding-left: 8px;
+    color: var(--primary-color);
+}
+
+#footer {
+    background-color: #e4e4e4;
+}
+
+/**
+ * Propriétés
+ */
+.property--image {
+    max-width: 100%;
+}
