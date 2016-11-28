@@ -13,11 +13,15 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: #ddd;
+    background-color: #d5ecff;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+a {
+    color: inherit;
 }
 
 .container {
@@ -51,7 +55,8 @@ body {
 
 #footer {
     margin-bottom: 1em;
-    background-color: #909090;
+    background-color: #0058a0;
+    color: #fff;
 }
 
 /**
