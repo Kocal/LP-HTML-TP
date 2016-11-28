@@ -2,11 +2,21 @@
  * BASE
  */
 
+/* THANKS IE
 :root {
     --primary-color-100: #004b9d;
     --primary-color-75: #0062b4;
     --primary-color-60: #006ec4;
     --secondary-color: #d30039;
+}
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
 }
 
 *, *::before, *::after {
@@ -21,85 +31,19 @@
 }
 
 /**
- * GRILLE
+ * BARRES
  */
-.row {
-    display: block;
-    width: 100%;
-    font-size: 0;
+.bar-actions {
+    margin: .5rem 0;
+    padding: .5rem;
+    /* thanks IE */
+    /*background-color: var(--secondary-color);*/
+    background-color: #d30039;
+    color: #fff;
 }
 
-.row-gutter-5 [class^="col"] {
-    padding-right: 5px;
-    padding-bottom: 5px;
-}
-
-[class^="col"] {
-    vertical-align: top;
-    display: inline-block;
-    font-size: 16px;
-}
-
-[class^="col"] input,
-[class^="col"] button,
-[class^="col"] textarea,
-[class^="col"] iframe,
-[class^="col"] object,
-[class^="col"] img {
-    max-width: 100%;
-}
-
-[class*="col-input-fill"] input,
-[class*="col-input-fill"] select {
-    width: 100%;
-}
-
-.col-1 {
-    width: calc(100% / 12 * 1)
-}
-
-.col-2 {
-    width: calc(100% / 12 * 2)
-}
-
-.col-3 {
-    width: calc(100% / 12 * 3)
-}
-
-.col-4 {
-    width: calc(100% / 12 * 4)
-}
-
-.col-5 {
-    width: calc(100% / 12 * 5)
-}
-
-.col-6 {
-    width: calc(100% / 12 * 6)
-}
-
-.col-7 {
-    width: calc(100% / 12 * 7)
-}
-
-.col-8 {
-    width: calc(100% / 12 * 8)
-}
-
-.col-9 {
-    width: calc(100% / 12 * 9)
-}
-
-.col-10 {
-    width: calc(100% / 12 * 10)
-}
-
-.col-11 {
-    width: calc(100% / 12 * 11)
-}
-
-.col-12 {
-    width: calc(100% / 12 * 12)
+.bar-actions > * {
+    vertical-align: -1em;
 }
 
 /**
@@ -112,26 +56,33 @@
     appearance: none;
 
     display: inline-block;
-    padding: .3em 1em;
+    padding: .3rem 1rem;
 
-    background-color: var(--primary-color-60);
+    /* thanks IE */
+    /*background-color: var(--primary-color-60);*/
+    background-color: #006ec4;
     color: #fff;
     text-decoration: none;
     text-align: center;
 }
 
 .button:hover {
-    background-color: var(--primary-color-75);
+    /* thanks IE */
+    /*background-color: var(--primary-color-75);*/
+    background-color: #0062b4;
 }
 
 .button.active,
 .button:focus,
 .button:active {
-    background-color: var(--primary-color-100);
+    /* thanks IE */
+    /*background-color: var(--primary-color-100);*/
+    background-color: #004b9d;
 }
 
 .button-group .button {
     display: block;
+    padding: .7em 0;
 }
 
 /**
@@ -182,7 +133,9 @@
 #header .site--title {
     vertical-align: top;
     padding-left: 8px;
-    color: var(--primary-color-100);
+    /* thanks IE */
+    /*color: var(--primary-color-100);*/
+    color: #004b9d;
 }
 
 #footer {
@@ -194,4 +147,10 @@
  */
 .property--image {
     max-width: 100%;
+}
+
+.property--name {
+    display: block;
+    color: #d30039;
+    font-size: 1.8rem;
 }
