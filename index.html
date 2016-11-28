@@ -6,5 +6,177 @@
 </head>
 <body>
 
+<header id="header">
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="assets/img/logo.png" alt="Logo de l'agence immobilière Immo Bordeaux">
+    </a>
+    <h1>Immo Bordeaux</h1>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <section>
+      <div class="group-buttons">
+        <a href="#" class="button active">Acheter</a>
+        <a href="#" class="button">Louer</a>
+        <a href="#" class="button">Vendre</a>
+      </div>
+
+      <div class="row">
+        <div class="col-8">
+          <p><strong>60</strong> annonces disponibles</p>
+        </div>
+        <div class="col-4">
+          <select>
+            <option>Trier par</option>
+            <option value="date_desc">Nouveauté</option>
+            <option value="date_asc">Ancienneté</option>
+            <option value="price_asc">Prix croissant</option>
+            <option value="price_desc">Prix décroissant</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="property">
+          <img src="http://lorempicsum.com/futurama/600/400/1" alt="" class="property--image">
+          <span class="property--name">Ma super adresse</span>
+          <span class="property--type">Maison</span>
+          <span class="property--surface">34 m²</span>
+          <span class="property--price">123 €</span>
+        </div>
+        <div class="property">
+          <img src="http://lorempicsum.com/futurama/600/400/1" alt="" class="property--image">
+          <span class="property--name">Ma super adresse</span>
+          <span class="property--type">Maison</span>
+          <span class="property--surface">34 m²</span>
+          <span class="property--price">123 €</span>
+        </div>
+        <div class="property">
+          <img src="http://lorempicsum.com/futurama/600/400/1" alt="" class="property--image">
+          <span class="property--name">Ma super adresse</span>
+          <span class="property--type">Maison</span>
+          <span class="property--surface">34 m²</span>
+          <span class="property--price">123 €</span>
+        </div>
+        <div class="property">
+          <img src="http://lorempicsum.com/futurama/600/400/1" alt="" class="property--image">
+          <span class="property--name">Ma super adresse</span>
+          <span class="property--type">Maison</span>
+          <span class="property--surface">34 m²</span>
+          <span class="property--price">123 €</span>
+        </div>
+        <div class="property">
+          <img src="http://lorempicsum.com/futurama/600/400/1" alt="" class="property--image">
+          <span class="property--name">Ma super adresse</span>
+          <span class="property--type">Maison</span>
+          <span class="property--surface">34 m²</span>
+          <span class="property--price">123 €</span>
+        </div>
+        <div class="property">
+          <img src="http://lorempicsum.com/futurama/600/400/1" alt="" class="property--image">
+          <span class="property--name">Ma super adresse</span>
+          <span class="property--type">Maison</span>
+          <span class="property--surface">34 m²</span>
+          <span class="property--price">123 €</span>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button class="button button-prev" disabled>&lt; Précédent</button>
+        <span class="pagination--item">1</span>
+        <a class="pagination--item">2</a>
+        <a class="pagination--item">3</a>
+        <span>...</span>
+        <a class="pagination--item">10</a>
+        <button class="button button-next">Suivant &gt;</button>
+      </div>
+
+    </section>
+    <aside>
+      <section>
+        <h2>Chercher un bien</h2>
+        <form action="#">
+          <div class="row">
+            <div class="col-12">
+              <select name="property-type">
+                <option>Type de bien</option>
+                <option value="house">Maison</option>
+                <option value="apartment">Appartement</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-7">
+              <label for="input-max-price">Loyer maximal (€)</label>
+            </div>
+            <div class="col-5">
+              <input id="input-max-price" type="number" min="0" aria-valuemin="0">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="input-surface">Surface (m²)</label>
+            </div>
+            <div class="col-6">
+              <input id="input-surface" type="number" min="0" aria-valuemin="0">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="input-radius">Rayon (km)</label>
+            </div>
+            <div class="col-6">
+              <input id="input-radius" type="number" min="0" aria-valuemin="0">
+            </div>
+          </div>
+        </form>
+        <hr>
+        <section>
+          <h2>Carte interactive</h2>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45266.183393943!2d-0.5549919357172022!3d44.839154225369164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1480329048874"
+              width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <img src="assets/img/logo.png" alt="Logo de l'agence immobilière Immo Bordeaux">
+        <p>
+          Immo Bordeaux &copy; 1996 - 2016
+        </p>
+      </div>
+      <div class="col-3">
+        <p>
+          33000 BORDEAUX, <br>
+          42 rue du Général Sansabri<br>
+          <a href="tel:+33555691234">+33 5 55 69 12 34</a>
+        </p>
+        <p>
+          <a href="#">Informations légales</a>
+        </p>
+      </div>
+      <div class="col-3">
+        <p>Retrouvez-nous sur :</p>
+        <div class="row">
+          <div class="col-4"><a href="#"><i class="icon icon-social-network-twitter"></i></a></div>
+          <div class="col-4"><a href="#"><i class="icon icon-social-network-facebook"></i></a></div>
+          <div class="col-4"><a href="#"><i class="icon icon-social-network-instagram"></i></a></div>
+          <div class="col-4"><a href="#"><i class="icon icon-social-network-google-plus"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
