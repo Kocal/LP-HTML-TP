@@ -21,28 +21,36 @@
   <div class="container row">
     <div class="col-9">
       <section>
-        <div class="group-buttons">
-          <a href="#" class="button active">Acheter</a>
-          <a href="#" class="button">Louer</a>
-          <a href="#" class="button">Vendre</a>
-        </div>
-
-        <div class="row">
-          <div class="col-8">
-            <p><strong>60</strong> annonces disponibles</p>
+        <div class="row button-group">
+          <div class="col-4">
+            <a href="#" class="button active">Acheter</a>
           </div>
           <div class="col-4">
-            <select>
-              <option>Trier par</option>
-              <option value="date_desc">Nouveauté</option>
-              <option value="date_asc">Ancienneté</option>
-              <option value="price_asc">Prix croissant</option>
-              <option value="price_desc">Prix décroissant</option>
-            </select>
+            <a href="#" class="button">Louer</a>
+          </div>
+          <div class="col-4">
+            <a href="#" class="button">Vendre</a>
           </div>
         </div>
 
         <div class="row">
+          <div class="col-9">
+            <p><strong>60</strong> annonces disponibles</p>
+          </div>
+          <div class="col-3 col-input-fill">
+            <p>
+              <select name="sort_by">
+                <option>Trier par</option>
+                <option value="date_desc">Nouveauté</option>
+                <option value="date_asc">Ancienneté</option>
+                <option value="price_asc">Prix croissant</option>
+                <option value="price_desc">Prix décroissant</option>
+              </select>
+            </p>
+          </div>
+        </div>
+
+        <div class="row row-gutter-5">
           <div class="col-4 property">
             <img src="http://lorempicsum.com/futurama/600/400/1" alt="" class="property--image">
             <span class="property--name">Ma super adresse</span>
@@ -111,7 +119,7 @@
           <h2>Chercher un bien</h2>
           <form action="#">
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 col-input-fill">
                 <select name="property-type">
                   <option>Type de bien</option>
                   <option value="house">Maison</option>

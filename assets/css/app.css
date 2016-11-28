@@ -3,8 +3,14 @@
  */
 
 :root {
-    --primary-color: #004b9d;
+    --primary-color-100: #004b9d;
+    --primary-color-75: #0062b4;
+    --primary-color-60: #006ec4;
     --secondary-color: #d30039;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 .container {
@@ -23,6 +29,11 @@
     font-size: 0;
 }
 
+.row-gutter-5 [class^="col"] {
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
 [class^="col"] {
     vertical-align: top;
     display: inline-block;
@@ -36,6 +47,11 @@
 [class^="col"] object,
 [class^="col"] img {
     max-width: 100%;
+}
+
+[class*="col-input-fill"] input,
+[class*="col-input-fill"] select {
+    width: 100%;
 }
 
 .col-1 {
@@ -87,6 +103,38 @@
 }
 
 /**
+ * BUTTONS
+ */
+
+.button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    display: inline-block;
+    padding: .3em 1em;
+
+    background-color: var(--primary-color-60);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--primary-color-75);
+}
+
+.button.active,
+.button:focus,
+.button:active {
+    background-color: var(--primary-color-100);
+}
+
+.button-group .button {
+    display: block;
+}
+
+/**
  * ICONES
  */
 
@@ -96,25 +144,31 @@
     width: 32px;
 }
 
-[class*="icon-social-network"] {}
+[class*="icon-social-network"] {
+}
 
 .icon-social-network-twitter {
     background-image: url('./img/icons/social-1_logo-twitter.svg');
 }
+
 .icon-social-network-facebook {
- background-image: url('./img/icons/social-1_logo-facebook.svg');
+    background-image: url('./img/icons/social-1_logo-facebook.svg');
 }
+
 .icon-social-network-instagram {
     background-image: url('./img/icons/social-1_logo-instagram.svg');
 }
+
 .icon-social-network-google-plus {
     background-image: url('./img/icons/social-1_logo-google-plus.svg');
 }
+
 /**
  * Elements racines
  */
 
 #header {
+    margin: 1em 0;
 }
 
 #header .container > * {
@@ -128,7 +182,7 @@
 #header .site--title {
     vertical-align: top;
     padding-left: 8px;
-    color: var(--primary-color);
+    color: var(--primary-color-100);
 }
 
 #footer {
