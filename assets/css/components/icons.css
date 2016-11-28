@@ -1,0 +1,24 @@
+.icon {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+
+[class*="icon-social-network"] {
+}
+
+.icon-social-network-twitter {
+    background-image: url('../img/icons/social-1_logo-twitter.svg');
+}
+
+.icon-social-network-facebook {
+    background-image: url('../img/icons/social-1_logo-facebook.svg');
+}
+
+.icon-social-network-instagram {
+    background-image: url('../img/icons/social-1_logo-instagram.svg');
+}
+
+.icon-social-network-google-plus {
+    background-image: url('../img/icons/social-1_logo-google-plus.svg');
+}
