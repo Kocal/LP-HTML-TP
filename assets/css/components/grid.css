@@ -7,7 +7,7 @@
     font-size: 0;
 }
 
-.row-gutter-5 > [class^="col"] {
+.row-gutter-5 > [class*="col"] {
     padding-bottom: .5rem;
     padding-right: .5rem;
 }
@@ -81,6 +81,10 @@
 }
 
 @media (max-width: 768px) {
+    [class^="row-gutter"] > [class*="col"] {
+        padding: 0;
+    }
+
     .col-md-1 {
         width: calc(100% / 12 * 1)
     }

@@ -24,6 +24,18 @@ a {
     color: inherit;
 }
 
+@media (min-width: 768px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
 .container {
     width: 100%;
     max-width: 1024px;
@@ -35,6 +47,7 @@ a {
     padding: 1em 0;
     margin-bottom: 1em;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 #header .container > * {
@@ -54,17 +67,31 @@ a {
 }
 
 #footer {
-    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 3em 0;
     background-color: #0058a0;
     color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+}
+
+#footer .logo {
+    display: block;
+    max-height: 10em;
+    margin: 0 auto;
 }
 
 /**
  * Propriétés
  */
+.property {
+    overflow: hidden;
+}
+
 .property--image {
     max-width: 100%;
+    max-height: 100%;
 }
+
 .property--name,
 .property--price {
     display: block;
@@ -75,9 +102,27 @@ a {
     font-size: 1.8rem;
 }
 
+.property--type:after {
+    content: ', '
+}
+
 .property--see-details {
     width: 100%
 }
 
 @media all and (max-width: 768px) {
+    .property {
+        height: 5em;
+        margin: .2em 0;
+    }
+
+    .property--name,
+    .property--type,
+    .property--price {
+        padding-left: .5em;
+    }
+
+    .property--see-details {
+        margin-left: .5em;
+    }
 }
