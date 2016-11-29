@@ -81,6 +81,23 @@ a {
 }
 
 /**
+/**
+ * Barre d'actions
+ */
+.bar-actions {
+    margin: 1em 0 .75em;
+    padding: .5rem;
+    /* thanks IE */
+    /*background-color: var(--secondary-color);*/
+    background-color: #d30039;
+    color: #fff;
+}
+
+.bar-actions > * {
+    vertical-align: -1em;
+}
+
+/**
  * Propriétés
  */
 .property {
