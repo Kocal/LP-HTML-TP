@@ -12,6 +12,7 @@
     color: #fff;
     text-decoration: none;
     text-align: center;
+    transition: all .2s;
 }
 
 .button:hover {
