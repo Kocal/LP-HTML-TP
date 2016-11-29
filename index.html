@@ -24,215 +24,189 @@
 </header>
 
 <main id="main">
-  <div class="container row row-gutter-5">
-    <div class="col-xs-9 col-md-12">
-      <section>
-        <div class="row button-group">
-          <div class="col-xs-4">
-            <a href="index.html" class="button active">Acheter</a>
-          </div>
-          <div class="col-xs-4">
-            <a href="index.html" class="button">Louer</a>
-          </div>
-          <div class="col-xs-4">
-            <a href="index.html" class="button">Vendre</a>
-          </div>
-        </div>
+  <div class="container">
 
-        <div class="row bar-actions">
-          <div class="col-xs-9">
-            <strong>60</strong> annonces disponibles
+    <section>
+      <h2>Rechercher un bien | <a href="#">Vendre un bien</a></h2>
+      <form action="#" class="form-search">
+        <div class="row row-gutter-medium">
+          <div class="col-xs-2 col-md-12">
+            <div class="col-xs-12 col-md-6">
+              <label>Achat <input type="radio" name="input-choice" value="acheter" checked></label>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <label>Louer <input type="radio" name="input-choice" value="louer"></label>
+            </div>
           </div>
-          <div class="col-xs-3 col-xs-input-fill">
-            <select name="sort_by">
-              <option>Trier par</option>
-              <option value="date_desc">Nouveauté</option>
-              <option value="date_asc">Ancienneté</option>
-              <option value="price_asc">Prix croissant</option>
-              <option value="price_desc">Prix décroissant</option>
+          <div class="col-xs-2 col-md-6 input-fill">
+            <label for="input-property-type">Type&nbsp;:</label>
+            <select id="input-property-type" name="property-type">
+              <option>-----------</option>
+              <option value="house">Maison</option>
+              <option value="apartment">Appartement</option>
             </select>
           </div>
-        </div>
-
-        <div class="row row-gutter-5">
-          <div class="col-xs-4 col-md-12 property">
-            <div class="row">
-              <div class="col-xs-12 col-md-4">
-                <a href="assets/img/upload/franklin-qslkdjqslkdjqlsdqsd23435.jpg">
-                  <img src="assets/img/upload/miniatures/franklin-qslkdjqslkdjqlsdqsd23435.jpg" alt=""
-                       class="property--image">
-                </a>
-              </div>
-              <div class="col-xs-12 col-md-8">
-                <span class="property--name">La maison de Franklin</span>
-                <span class="property--type">Maison</span>
-                <span class="property--surface">20 m²</span>
-                <span class="property--price">Prix: <strong>20 salades</strong></span>
-                <a href="#" class="button property--see-details">Voir les détails</a>
-              </div>
-            </div>
+          <div class="col-xs-2 col-md-6 input-fill">
+            <label for="input-max-price">Prix max.&nbsp;(€)</label>
+            <input id="input-max-price" type="number" min="0" aria-valuemin="0">
           </div>
-
-          <div class="col-xs-4 col-md-12 property">
-            <div class="row">
-              <div class="col-xs-12 col-md-4">
-                <a href="assets/img/upload/kame-house-qmsldkqs6587.jpg">
-                  <img src="assets/img/upload/miniatures/kame-house-qmsldkqs6587.jpg" alt=""
-                       class="property--image">
-                </a>
-              </div>
-              <div class="col-xs-12 col-md-8">
-                <span class="property--name">Kame house</span>
-                <span class="property--type">Maison</span>
-                <span class="property--surface">25 m²</span>
-                <span class="property--price">Prix: <strong>1000 Ƶ</strong></span>
-                <a href="#" class="button property--see-details">Voir les détails</a>
-              </div>
-            </div>
+          <div class="col-xs-2 col-md-6 input-fill">
+            <label for="input-property-type">Surface&nbsp;(m²)</label>
+            <input id="input-surface" type="number" min="0" aria-valuemin="0">
           </div>
-
-          <div class="col-xs-4 col-md-12 property">
-            <div class="row">
-              <div class="col-xs-12 col-md-4">
-                <a href="assets/img/upload/maison-a-lenvers-s21q234a.jpg">
-                  <img src="assets/img/upload/miniatures/maison-a-lenvers-s21q234a.jpg" alt=""
-                       class="property--image">
-                </a>
-              </div>
-              <div class="col-xs-12 col-md-8">
-                <span class="property--name" >Une maison retournée</span>
-                <span class="property--type">Maison</span>
-                <span class="property--surface">25 m²</span>
-                <span class="property--price">Prix: <strong>1500 €</strong></span>
-                <a href="#" class="button property--see-details">Voir les détails</a>
-              </div>
-            </div>
+          <div class="col-xs-2 col-md-6 input-fill">
+            <label for="input-property-type">Rayon&nbsp;(km)</label>
+            <input id="input-radius" type="number" min="0" aria-valuemin="0">
+          </div>
+          <div class="col-xs-2 col-md-12 input-fill">
+            <input type="submit" value="Chercher" class="button button-primary">
           </div>
         </div>
+      </form>
+    </section>
+    <!--<div class="ads">-->
+    <!--<img-->
+    <!--src="https://storage.googleapis.com/support-kms-prod/SNP_59D432450939ECC60A21BEDBEE985B1817B1_3094744_en_v2"-->
+    <!--alt="">-->
+    <!--</div>-->
 
-        <div class="row row-gutter-5">
-          <div class="col-xs-4 col-md-12 property">
-            <div class="row">
-              <div class="col-xs-12 col-md-4">
-                <a href="assets/img/upload//poudlard-qklsdjqklsd45555.jpg">
-                  <img src="assets/img/upload/miniatures/poudlard-qklsdjqklsd45555.jpg" alt=""
-                       class="property--image">
-                </a>
-              </div>
-              <div class="col-xs-12 col-md-8">
-                <span class="property--name">Chateau de Poudlard</span>
-                <span class="property--type">Chateau</span>
-                <span class="property--surface">34 m²</span>
-                <span class="property--price">Prix: <strong>10.000 mornilles</strong></span>
-                <a href="#" class="button property--see-details">Voir les détails</a>
-              </div>
-            </div>
-          </div>
+    <section>
+      <h2>Annonces pour acheter</h2>
 
-          <div class="col-xs-4 col-md-12 property">
-            <div class="row">
-              <div class="col-xs-12 col-md-4">
-                <a href="assets/img/upload/residence_recamier_3-qsdqsd62qsd2.jpg">
-                  <img src="assets/img/upload/miniatures/residence_recamier_3-qsdqsd62qsd2.jpg" alt=""
-                       class="property--image">
-                </a>
-              </div>
-              <div class="col-xs-12 col-md-8">
-                <span class="property--name">Chez nous</span>
-                <span class="property--type">Appartement</span>
-                <span class="property--surface">10.000 m²</span>
-                <span class="property--price">Prix : <strong>500 €</strong></span>
-                <a href="#" class="button property--see-details">Voir les détails</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-12 property">
-            <div class="row">
-              <div class="col-xs-12 col-md-4">
-                <a href="assets/img/upload/temple-fate-zero-qsdlmqksdazae665.jpg">
-                  <img src="assets/img/upload/miniatures/temple-fate-zero-qsdlmqksdazae665.jpg" alt=""
-                       class="property--image">
-                </a>
-              </div>
-              <div class="col-xs-12 col-md-8">
-                <span class="property--name">Un temple</span>
-                <span class="property--type">Temple</span>
-                <span class="property--surface">3.000 m²</span>
-                <span class="property--price">Prix: <strong>100.000 €</strong></span>
-                <a href="#" class="button property--see-details">Voir les détails</a>
-              </div>
-            </div>
-          </div>
+      <div class="row bar-actions">
+        <div class="col-xs-9">
+          <strong>60</strong> annonces
         </div>
-
-        <div class="pagination">
-          <a href="#" class="pagination--item disabled" href="#">&laquo;</a>
-          <a href="#" class="pagination--item active">1</a>
-          <a href="#" class="pagination--item">2</a>
-          <a href="#" class="pagination--item">3</a>
-          <span class="pagination--item">...</span>
-          <a href="#" class="pagination--item">10</a>
-          <a href="#" class="pagination--item" href="#">&raquo;</a>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-xs-3 col-md-12">
-      <aside>
-        <div>
-          <h2>Chercher un bien</h2>
-          <form action="#">
-            <div class="row">
-              <div class="col-xs-12 col-xs-input-fill">
-                <select name="property-type">
-                  <option>Type de bien</option>
-                  <option value="house">Maison</option>
-                  <option value="apartment">Appartement</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <label for="input-max-price">Loyer maximal (€)</label>
-              </div>
-              <div class="col-xs-6">
-                <input id="input-max-price" type="number" min="0" aria-valuemin="0">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <label for="input-surface">Surface (m²)</label>
-              </div>
-              <div class="col-xs-6">
-                <input id="input-surface" type="number" min="0" aria-valuemin="0">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <label for="input-radius">Rayon (km)</label>
-              </div>
-              <div class="col-xs-6">
-                <input id="input-radius" type="number" min="0" aria-valuemin="0">
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="ads">
-          <img src="https://lh3.ggpht.com/H8LE7fE6SRPpyBIs3CpNLn_4LBxZjmHbCos9CCeyDmUEGGI05vBM1QoQLcvDMp8sp70EI5Pk=w250" alt="">
-        </div>
-      </aside>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="map-wrapper">
-          <iframe
-              class="map"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45266.183393943!2d-0.5549919357172022!3d44.839154225369164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1480329048874"
-              frameborder="0" style="border:0" allowfullscreen width="100%"></iframe>
+        <div class="col-xs-3 col-xs-input-fill">
+          <select name="sort_by">
+            <option>Trier par</option>
+            <option value="date_desc">Nouveauté</option>
+            <option value="date_asc">Ancienneté</option>
+            <option value="price_asc">Prix croissant</option>
+            <option value="price_desc">Prix décroissant</option>
+          </select>
         </div>
       </div>
-    </div>
+
+      <div class="row row-gutter-small">
+        <div class="col-xs-4 col-md-12 property row">
+          <div class="col-xs-12 col-md-4">
+            <a href="assets/img/upload/franklin-qslkdjqslkdjqlsdqsd23435.jpg">
+              <img src="assets/img/upload/miniatures/franklin-qslkdjqslkdjqlsdqsd23435.jpg" alt=""
+                   class="property--image">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <span class="property--name">La maison de Franklin</span>
+            <span class="property--type">Maison</span>
+            <span class="property--surface">20 m²</span>
+            <span class="property--price">Prix: <strong>20 salades</strong></span>
+            <a href="#" class="button property--see-details">Voir les détails</a>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-md-12 property row">
+          <div class="col-xs-12 col-md-4">
+            <a href="assets/img/upload/kame-house-qmsldkqs6587.jpg">
+              <img src="assets/img/upload/miniatures/kame-house-qmsldkqs6587.jpg" alt=""
+                   class="property--image">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <span class="property--name">Kame house</span>
+            <span class="property--type">Maison</span>
+            <span class="property--surface">25 m²</span>
+            <span class="property--price">Prix: <strong>1000 Ƶ</strong></span>
+            <a href="#" class="button property--see-details">Voir les détails</a>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-md-12 property row">
+          <div class="col-xs-12 col-md-4">
+            <a href="assets/img/upload/maison-a-lenvers-s21q234a.jpg">
+              <img src="assets/img/upload/miniatures/maison-a-lenvers-s21q234a.jpg" alt=""
+                   class="property--image">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <span class="property--name">Une maison retournée</span>
+            <span class="property--type">Maison</span>
+            <span class="property--surface">25 m²</span>
+            <span class="property--price">Prix: <strong>1500 €</strong></span>
+            <a href="#" class="button property--see-details">Voir les détails</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-gutter-small">
+        <div class="col-xs-4 col-md-12 property row">
+          <div class="col-xs-12 col-md-4">
+            <a href="assets/img/upload//poudlard-qklsdjqklsd45555.jpg">
+              <img src="assets/img/upload/miniatures/poudlard-qklsdjqklsd45555.jpg" alt=""
+                   class="property--image">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <span class="property--name">Chateau de Poudlard</span>
+            <span class="property--type">Chateau</span>
+            <span class="property--surface">34 m²</span>
+            <span class="property--price">Prix: <strong>10.000 mornilles</strong></span>
+            <a href="#" class="button property--see-details">Voir les détails</a>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-md-12 property row">
+          <div class="col-xs-12 col-md-4">
+            <a href="assets/img/upload/residence_recamier_3-qsdqsd62qsd2.jpg">
+              <img src="assets/img/upload/miniatures/residence_recamier_3-qsdqsd62qsd2.jpg" alt=""
+                   class="property--image">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <span class="property--name">Chez nous</span>
+            <span class="property--type">Appartement</span>
+            <span class="property--surface">10.000 m²</span>
+            <span class="property--price">Prix : <strong>500 €</strong></span>
+            <a href="#" class="button property--see-details">Voir les détails</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-md-12 property row">
+          <div class="col-xs-12 col-md-4">
+            <a href="assets/img/upload/temple-fate-zero-qsdlmqksdazae665.jpg">
+              <img src="assets/img/upload/miniatures/temple-fate-zero-qsdlmqksdazae665.jpg" alt=""
+                   class="property--image">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <span class="property--name">Un temple</span>
+            <span class="property--type">Temple</span>
+            <span class="property--surface">3.000 m²</span>
+            <span class="property--price">Prix: <strong>100.000 €</strong></span>
+            <a href="#" class="button property--see-details">Voir les détails</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <a href="#" class="pagination--item disabled" href="#">&laquo;</a>
+        <a href="#" class="pagination--item active">1</a>
+        <a href="#" class="pagination--item">2</a>
+        <a href="#" class="pagination--item">3</a>
+        <span class="pagination--item">...</span>
+        <a href="#" class="pagination--item">10</a>
+        <a href="#" class="pagination--item" href="#">&raquo;</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Carte</h2>
+      <div class="map-wrapper">
+        <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45266.183393943!2d-0.5549919357172022!3d44.839154225369164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1480329048874"
+            frameborder="0" style="border:0" allowfullscreen width="100%"></iframe>
+      </div>
+    </section>
   </div>
 </main>
 
@@ -256,7 +230,6 @@
         </p>
       </div>
       <div class="col-xs-4 col-md-12">
-        <p class="hide-on-mobile">Retrouvez-nous sur :</p>
         <div class="row">
           <div class="col-xs-3"><a href="#" title="Twitter"><i class="icon icon-social-network-twitter"></i></a></div>
           <div class="col-xs-3"><a href="#" title="Facebook"><i class="icon icon-social-network-facebook"></i></a></div>

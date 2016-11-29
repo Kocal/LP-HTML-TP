@@ -34,11 +34,11 @@
 
 .button-group .button {
     display: block;
-    padding: .7em 0;
+    padding: .5em 0;
 }
 
 .button-primary {
-    background-color: #aa002f;
+    background-color: #9b002b;
 }
 
 .button-primary:hover {

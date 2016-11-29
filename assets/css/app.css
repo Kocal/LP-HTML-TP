@@ -43,6 +43,10 @@ a {
     margin-right: auto;
 }
 
+h2 {
+    color: #d30039;
+}
+
 #header {
     padding: 1em 0;
     margin-bottom: 1em;
@@ -81,6 +85,41 @@ a {
 }
 
 /**
+ * Formulaire de recherches
+ */
+
+.form-search {
+    margin: 0 0 1em;
+    padding: 1em;
+
+    background-color: #d30039;
+    box-shadow: 0 0 1px #d30039;
+    color: #fff;
+}
+
+.form-search--title {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.form-search .row > * {
+    vertical-align: top;
+}
+
+@media all and (max-width: 768px) {
+    .form-search label {
+        display: block;
+    }
+}
+
+/**
+ * Ads
+ */
+.ads {
+    text-align: center;
+    padding: 1em 0;
+}
+
 /**
  * Barre d'actions
  */
