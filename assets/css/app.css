@@ -7,6 +7,10 @@
 }
 */
 
+/* ==== */
+/* BASE */
+/* ==== */
+
 html {
     font-size: 62.5%;
 }
@@ -47,6 +51,10 @@ h2 {
     color: #d30039;
 }
 
+/* ====== */
+/* HEADER */
+/* ====== */
+
 #header {
     padding: 1em 0;
     margin-bottom: 1em;
@@ -70,6 +78,10 @@ h2 {
     color: #004b9d;
 }
 
+/* ====== */
+/* FOOTER */
+/* ====== */
+
 #footer {
     margin-top: 1em;
     padding: 3em 0;
@@ -84,9 +96,9 @@ h2 {
     margin: 0 auto;
 }
 
-/**
- * Formulaire de recherches
- */
+/* ======================= */
+/* FORMULAIRE DE RECHERCHE */
+/* ======================= */
 
 .form-search {
     margin: 0 0 1em;
@@ -112,17 +124,19 @@ h2 {
     }
 }
 
-/**
- * Ads
- */
+/* ====== */
+/* LA PUB */
+/* ====== */
+
 .ads {
     text-align: center;
     padding: 1em 0;
 }
 
-/**
- * Barre d'actions
- */
+/* ============== */
+/* BARRE D'ACTION */
+/* ============== */
+
 .bar-actions {
     margin: 1em 0 .75em;
     padding: .5rem;
@@ -136,9 +150,10 @@ h2 {
     vertical-align: -1em;
 }
 
-/**
- * Propriétés
- */
+/* ================== */
+/* MAISONS ET APPARTS */
+/* ================== */
+
 .property {
     overflow: hidden;
 }
@@ -182,6 +197,10 @@ h2 {
         margin-left: .5em;
     }
 }
+
+/* ========== */
+/* GOOGLE MAP */
+/* ========== */
 
 .map-wrapper {
     position: relative;
