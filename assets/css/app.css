@@ -62,8 +62,9 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
-#header .container > * {
-    display: inline-block;
+#header .container {
+    display: flex;
+    align-items: center;
 }
 
 #header .site--logo {
@@ -71,11 +72,22 @@ h2 {
 }
 
 #header .site--title {
-    vertical-align: top;
     padding-left: 8px;
     /* thanks IE */
     /*color: var(--primary-color-100);*/
     color: #004b9d;
+}
+
+#header .site--navigation {
+    flex: 1;
+    text-align: right;
+    font-size: 2rem;
+    color: #d30039;
+}
+
+#header .site--navigation a {
+    text-decoration: none;
+    padding-left: 2em;
 }
 
 /* ====== */
