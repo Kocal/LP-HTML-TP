@@ -96,7 +96,9 @@
     }
 
     .col-sm-2 {
-        width: calc(100% / 12 * 2)
+        width: calc(100% / 12 * 2);
+        /* IE :-) */
+        width: 16.66666666667%;
     }
 
     .col-sm-3 {
