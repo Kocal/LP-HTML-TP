@@ -2,8 +2,13 @@
  * GRILLE
  */
 .row {
+    padding: 0;
     display: block;
     width: 100%;
+}
+
+.row .row {
+    padding: 0 .25em;
 }
 
 .row::after {
@@ -17,25 +22,15 @@
     vertical-align: top;
 }
 
-.row-gutter-small > [class*="col"] {
-    padding: .25rem;
-}
-.row-gutter-medium > [class*="col"] {
-    padding: .50rem;
+[class*="col-xs"],
+[class*="col-md"] {
+    position: relative;
+    min-height: 1px;
 }
 
-[class^="col"] input,
-[class^="col"] button,
-[class^="col"] textarea,
-[class^="col"] iframe,
-[class^="col"] object,
-[class^="col"] img {
+[class*="col-xs"] > *,
+[class*="col-md"] > * {
     max-width: 100%;
-}
-
-[class*="input-fill"] input,
-[class*="input-fill"] select {
-    width: 100%;
 }
 
 .col-xs-0 {
@@ -91,9 +86,6 @@
 }
 
 @media (min-width: 768px) {
-    [class^="row-gutter"] > [class*="col"] {
-        padding: 0;
-    }
 
     .col-sm-0 {
         width: 0;

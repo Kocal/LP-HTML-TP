@@ -4,7 +4,7 @@
 
 .form {
     margin: 0 0 1em;
-    padding: .5em;
+    padding: 15px 0;
 
     background-color: #d30039;
     box-shadow: 0 0 1px #d30039;
@@ -15,6 +15,10 @@
 .form-label,
 .form-control {
     width: 100%;
+}
+
+.form-group {
+    padding: .5em 0;
 }
 
 .form-label {

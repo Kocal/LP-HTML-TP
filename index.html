@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/app.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/grid.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/buttons.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/form.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/icons.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/pagination.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/app.css">
 </head>
 <body>
 
@@ -34,8 +34,8 @@
 
     <section>
       <form action="#" class="form form-search">
-        <div class="row row-gutter-medium">
-          <div class="col-xs-2 col-md-6">
+        <div class="row">
+          <div class="col-sm-2 col-xs-12">
             <div class="form-group">
               <label class="form-label" for="input-property-type">Type&nbsp;de logement</label>
               <select class="form-control" id="input-property-type" name="property-type">
@@ -44,33 +44,35 @@
               </select>
             </div>
           </div>
-          <div class="col-xs-2 col-md-6">
+          <div class="col-sm-2 col-xs-6">
             <div class="form-group">
               <label class="form-label" for="input-max-price">Prix max.&nbsp;(€)</label>
               <input class="form-control" id="input-max-price" type="number" min="0" aria-valuemin="0">
             </div>
           </div>
-          <div class="col-xs-2 col-md-6">
+          <div class="col-sm-2 col-xs-6">
             <div class="form-group">
               <label class="form-label" for="input-max-charge">Charges max.&nbsp;(€)</label>
               <input class="form-control" id="input-max-charge" type="number" min="0" aria-valuemin="0">
             </div>
           </div>
-          <div class="col-xs-2 col-md-6">
+          <div class="col-sm-2 col-xs-6">
             <div class="form-group">
               <label class="form-label" for="input-surface">Surface&nbsp;(m²)</label>
               <input class="form-control" id="input-surface" type="number" min="0" aria-valuemin="0">
             </div>
           </div>
-          <div class="col-xs-2 col-md-6">
+          <div class="col-sm-2 col-xs-6">
             <div class="form-group">
               <label class="form-label" for="input-radius">Rayon&nbsp;(km)</label>
               <input class="form-control" id="input-radius" type="number" min="0" aria-valuemin="0">
             </div>
           </div>
-          <div class="col-xs-2 col-md-12">
-            <input type="submit" value="Louer" class="button button-primary button-enlarge">
-            <input type="submit" value="Acheter" class="button button-primary button-enlarge">
+          <div class="col-sm-2 col-xs-12 center-vertical">
+            <div class="form-group">
+              <input type="submit" value="Louer" class="button button-primary button-enlarge">
+              <input type="submit" value="Acheter" class="button button-primary button-enlarge">
+            </div>
           </div>
         </div>
       </form>
@@ -82,32 +84,17 @@
     <!--</div>-->
 
     <section>
-      <h2>Annonces pour acheter</h2>
+      <h2>Les 3 dernières annonces en vente</h2>
 
-      <div class="row bar-actions">
-        <div class="col-xs-9">
-          <strong>60</strong> annonces
-        </div>
-        <div class="col-xs-3 col-xs-input-fill">
-          <select name="sort_by">
-            <option>Trier par</option>
-            <option value="date_desc">Nouveauté</option>
-            <option value="date_asc">Ancienneté</option>
-            <option value="price_asc">Prix croissant</option>
-            <option value="price_desc">Prix décroissant</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="row row-gutter-small">
-        <div class="col-xs-4 col-md-12 property row">
-          <div class="col-xs-12 col-md-4">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 property row">
+          <div class="col-sm-12 col-xs-4">
             <a href="assets/img/upload/franklin-qslkdjqslkdjqlsdqsd23435.jpg">
               <img src="assets/img/upload/miniatures/franklin-qslkdjqslkdjqlsdqsd23435.jpg" alt=""
                    class="property--image">
             </a>
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-sm-12 col-xs-8">
             <span class="property--name">La maison de Franklin</span>
             <span class="property--type">Maison</span>
             <span class="property--surface">20 m²</span>
@@ -116,14 +103,14 @@
           </div>
         </div>
 
-        <div class="col-xs-4 col-md-12 property row">
-          <div class="col-xs-12 col-md-4">
+        <div class="col-sm-4 col-xs-12 property row">
+          <div class="col-sm-12 col-xs-4">
             <a href="assets/img/upload/kame-house-qmsldkqs6587.jpg">
               <img src="assets/img/upload/miniatures/kame-house-qmsldkqs6587.jpg" alt=""
                    class="property--image">
             </a>
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-sm-12 col-xs-8">
             <span class="property--name">Kame house</span>
             <span class="property--type">Maison</span>
             <span class="property--surface">25 m²</span>
@@ -132,14 +119,14 @@
           </div>
         </div>
 
-        <div class="col-xs-4 col-md-12 property row">
-          <div class="col-xs-12 col-md-4">
+        <div class="col-sm-4 col-xs-12 property row">
+          <div class="col-sm-12 col-xs-4">
             <a href="assets/img/upload/maison-a-lenvers-s21q234a.jpg">
               <img src="assets/img/upload/miniatures/maison-a-lenvers-s21q234a.jpg" alt=""
                    class="property--image">
             </a>
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-sm-12 col-xs-8">
             <span class="property--name">Une maison retournée</span>
             <span class="property--type">Maison</span>
             <span class="property--surface">25 m²</span>
@@ -149,15 +136,17 @@
         </div>
       </div>
 
-      <div class="row row-gutter-small">
-        <div class="col-xs-4 col-md-12 property row">
-          <div class="col-xs-12 col-md-4">
-            <a href="assets/img/upload//poudlard-qklsdjqklsd45555.jpg">
+      <h2>Les 3 dernières annonces à louer</h2>
+
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 property row">
+          <div class="col-sm-12 col-xs-4">
+            <a href="assets/img/upload/poudlard-qklsdjqklsd45555.jpg">
               <img src="assets/img/upload/miniatures/poudlard-qklsdjqklsd45555.jpg" alt=""
                    class="property--image">
             </a>
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-sm-12 col-xs-8">
             <span class="property--name">Chateau de Poudlard</span>
             <span class="property--type">Chateau</span>
             <span class="property--surface">34 m²</span>
@@ -166,14 +155,14 @@
           </div>
         </div>
 
-        <div class="col-xs-4 col-md-12 property row">
-          <div class="col-xs-12 col-md-4">
+        <div class="col-sm-4 col-xs-12 property row">
+          <div class="col-sm-12 col-xs-4">
             <a href="assets/img/upload/residence_recamier_3-qsdqsd62qsd2.jpg">
               <img src="assets/img/upload/miniatures/residence_recamier_3-qsdqsd62qsd2.jpg" alt=""
                    class="property--image">
             </a>
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-sm-12 col-xs-8">
             <span class="property--name">Chez nous</span>
             <span class="property--type">Appartement</span>
             <span class="property--surface">10.000 m²</span>
@@ -181,14 +170,14 @@
             <a href="#" class="button property--see-details">Voir les détails</a>
           </div>
         </div>
-        <div class="col-xs-4 col-md-12 property row">
-          <div class="col-xs-12 col-md-4">
+        <div class="col-sm-4 col-xs-12 property row">
+          <div class="col-sm-12 col-xs-4">
             <a href="assets/img/upload/temple-fate-zero-qsdlmqksdazae665.jpg">
               <img src="assets/img/upload/miniatures/temple-fate-zero-qsdlmqksdazae665.jpg" alt=""
                    class="property--image">
             </a>
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-sm-12 col-xs-8">
             <span class="property--name">Un temple</span>
             <span class="property--type">Temple</span>
             <span class="property--surface">3.000 m²</span>
@@ -196,16 +185,6 @@
             <a href="#" class="button property--see-details">Voir les détails</a>
           </div>
         </div>
-      </div>
-
-      <div class="pagination">
-        <a href="#" class="pagination--item disabled">&laquo;</a>
-        <a href="#" class="pagination--item active">1</a>
-        <a href="#" class="pagination--item">2</a>
-        <a href="#" class="pagination--item">3</a>
-        <span class="pagination--item">...</span>
-        <a href="#" class="pagination--item">10</a>
-        <a href="#" class="pagination--item">&raquo;</a>
       </div>
     </section>
 
@@ -224,10 +203,10 @@
 <footer id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-12">
+      <div class="col-sm-4 col-xs-12">
         <img class="logo" src="assets/img/logo.png" alt="Logo de l'agence immobilière Immo Bordeaux">
       </div>
-      <div class="col-xs-4 col-md-12">
+      <div class="col-sm-4 col-xs-12">
         <p>
           Immo Bordeaux &copy; 1996 - 2016
         </p>
@@ -240,7 +219,7 @@
           <a href="#">Informations légales</a>
         </p>
       </div>
-      <div class="col-xs-4 col-md-12">
+      <div class="col-sm-4 col-xs-12">
         <div class="row">
           <div class="col-xs-3"><a href="#" title="Twitter"><i class="icon icon-social-network-twitter"></i></a></div>
           <div class="col-xs-3"><a href="#" title="Facebook"><i class="icon icon-social-network-facebook"></i></a></div>

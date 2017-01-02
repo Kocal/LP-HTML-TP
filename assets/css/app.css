@@ -18,6 +18,8 @@ html {
 body {
     font-size: 1.6rem;
     background-color: #d5ecff;
+    background-image: url('img/wallpaper.jpg');
+    background-size: cover;
 }
 
 *, *::before, *::after {
@@ -47,8 +49,13 @@ a {
     margin-right: auto;
 }
 
-h2 {
-    color: #d30039;
+h2,
+h3,
+h4 {
+    background-color: #d30039;
+    color: #fff;
+    margin: .25em 0;
+    padding: .25em .5em;
 }
 
 /* ====== */
@@ -57,7 +64,6 @@ h2 {
 
 #header {
     padding: 1em 0;
-    margin-bottom: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
@@ -91,12 +97,20 @@ h2 {
     padding: .25em 1em
 }
 
+/* ==== */
+/* MAIN */
+/* ==== */
+
+#main {
+    padding: 1em 0;
+    background-color: rgba(255, 255, 255, .5);
+}
+
 /* ====== */
 /* FOOTER */
 /* ====== */
 
 #footer {
-    margin-top: 1em;
     padding: 3em 0;
     text-align: center;
     background-color: #0058a0;
@@ -115,8 +129,7 @@ h2 {
 /* ======================= */
 
 .form-search {
-    margin: 0 0 1em;
-    padding: .5em;
+    padding: 10px 0;
     background-color: #d30039;
     box-shadow: 0 0 1px #d30039;
     color: #fff;
@@ -154,6 +167,8 @@ h2 {
 
 .property {
     overflow: hidden;
+    background-color: #fff;
+    padding: .25em !important;
 }
 
 .property--image {
@@ -181,18 +196,24 @@ h2 {
 
 @media all and (max-width: 768px) {
     .property {
-        height: 5em;
-        margin: .2em 0;
+        height: 5.9em;
+        margin: .25em 0;
+    }
+
+    .property--image {
+        overflow: hidden;
     }
 
     .property--name,
     .property--type,
     .property--price {
-        padding-left: .5em;
+        padding: .1em 0 .1em .5em;
     }
 
     .property--see-details {
-        margin-left: .5em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
