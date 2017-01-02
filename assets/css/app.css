@@ -86,8 +86,9 @@ h2 {
 }
 
 #header .site--navigation a {
+    display: inline-block;
     text-decoration: none;
-    padding-left: 2em;
+    padding: .25em 1em
 }
 
 /* ====== */
