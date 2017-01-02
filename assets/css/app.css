@@ -54,7 +54,7 @@ h3,
 h4 {
     background-color: #d30039;
     color: #fff;
-    margin: .25em 0;
+    margin: 1em 0;
     padding: .25em .5em;
 }
 
@@ -68,7 +68,12 @@ h4 {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
-#header .container {
+#header a {
+    text-decoration: none;
+}
+
+#header .container,
+#header .site--link {
     display: flex;
     align-items: center;
 }
@@ -78,6 +83,7 @@ h4 {
 }
 
 #header .site--title {
+    display: inline-block;
     padding-left: 8px;
     /* thanks IE */
     /*color: var(--primary-color-100);*/
@@ -131,8 +137,11 @@ h4 {
 .form-search {
     padding: 10px 0;
     background-color: #d30039;
-    box-shadow: 0 0 1px #d30039;
     color: #fff;
+}
+
+.form-search .row > * {
+    padding: 0 .5em;
 }
 
 /* ====== */
@@ -144,31 +153,15 @@ h4 {
     padding: 1em 0;
 }
 
-/* ============== */
-/* BARRE D'ACTION */
-/* ============== */
-
-.bar-actions {
-    margin: 1em 0 .75em;
-    padding: .5rem;
-    /* thanks IE */
-    /*background-color: var(--secondary-color);*/
-    background-color: #d30039;
-    color: #fff;
-}
-
-.bar-actions > * {
-    vertical-align: -1em;
-}
-
 /* ================== */
 /* MAISONS ET APPARTS */
 /* ================== */
 
 .property {
+    padding: .5em !important;
     overflow: hidden;
+    line-height: 1.6em;
     background-color: #fff;
-    padding: .25em !important;
 }
 
 .property--image {
@@ -198,6 +191,8 @@ h4 {
     .property {
         height: 5.9em;
         margin: .25em 0;
+        line-height: 1.9em;
+        padding: 0 !important;
     }
 
     .property--image {
