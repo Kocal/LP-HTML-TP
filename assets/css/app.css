@@ -98,6 +98,7 @@ h2 {
 #footer {
     margin-top: 1em;
     padding: 3em 0;
+    text-align: center;
     background-color: #0058a0;
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5)
