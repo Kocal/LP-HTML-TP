@@ -17,8 +17,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: #d5ecff;
-    background-image: url('img/wallpaper.jpg');
+    background: #d5ecff url('img/wallpaper.jpg') 50%;
     background-size: cover;
 }
 
