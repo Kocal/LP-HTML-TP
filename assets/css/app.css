@@ -1,0 +1,231 @@
+/* THANKS IE
+:root {
+    --primary-color-100: #004b9d;
+    --primary-color-75: #0062b4;
+    --primary-color-60: #006ec4;
+    --secondary-color: #d30039;
+}
+*/
+
+/* ==== */
+/* BASE */
+/* ==== */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #d5ecff url('img/wallpaper.jpg') 50%;
+    background-size: cover;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+@media (min-width: 768px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2,
+h3,
+h4 {
+    background-color: #d30039;
+    color: #fff;
+    margin: 1em 0;
+    padding: .25em .5em;
+}
+
+/* ====== */
+/* HEADER */
+/* ====== */
+
+#header {
+    padding: 1em 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header .container,
+#header .site--link {
+    display: flex;
+    align-items: center;
+}
+
+#header .site--logo {
+    height: 72px;
+}
+
+#header .site--title {
+    display: inline-block;
+    padding-left: 8px;
+    /* thanks IE */
+    /*color: var(--primary-color-100);*/
+    color: #004b9d;
+}
+
+#header .site--navigation {
+    flex: 1;
+    text-align: right;
+    font-size: 2rem;
+    color: #d30039;
+}
+
+#header .site--navigation a {
+    display: inline-block;
+    text-decoration: none;
+    padding: .25em 1em
+}
+
+/* ==== */
+/* MAIN */
+/* ==== */
+
+#main {
+    padding: 1em 0;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+/* ====== */
+/* FOOTER */
+/* ====== */
+
+#footer {
+    padding: 3em 0;
+    text-align: center;
+    background-color: #0058a0;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+}
+
+#footer .logo {
+    display: block;
+    max-height: 10em;
+    margin: 0 auto;
+}
+
+/* ======================= */
+/* FORMULAIRE DE RECHERCHE */
+/* ======================= */
+
+.form-search {
+    padding: 10px 0;
+    background-color: #d30039;
+    color: #fff;
+}
+
+.form-search .row > * {
+    padding: 0 .5em;
+}
+
+/* ====== */
+/* LA PUB */
+/* ====== */
+
+.ads {
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* ================== */
+/* MAISONS ET APPARTS */
+/* ================== */
+
+.property {
+    padding: .5em !important;
+    overflow: hidden;
+    line-height: 1.6em;
+    background-color: #fff;
+}
+
+.property--image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.property--name,
+.property--price {
+    display: block;
+}
+
+.property--name {
+    color: #d30039;
+    font-size: 1.8rem;
+}
+
+.property--type:after {
+    content: ', '
+}
+
+.property--see-details {
+    width: 100%
+}
+
+@media all and (max-width: 768px) {
+    .property {
+        height: 5.9em;
+        margin: .25em 0;
+        line-height: 1.9em;
+        padding: 0 !important;
+    }
+
+    .property--image {
+        overflow: hidden;
+    }
+
+    .property--name,
+    .property--type,
+    .property--price {
+        padding: .1em 0 .1em .5em;
+    }
+
+    .property--see-details {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ========== */
+/* GOOGLE MAP */
+/* ========== */
+
+.map-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.map-wrapper .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

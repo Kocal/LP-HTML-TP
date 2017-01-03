@@ -1,0 +1,43 @@
+/* ============ */
+/* FORM & INPUT */
+/* ============ */
+
+.form {
+    margin: 0 0 1em;
+    padding: 15px 0;
+
+    background-color: #d30039;
+    box-shadow: 0 0 1px #d30039;
+    color: #fff;
+}
+
+.form-group,
+.form-label,
+.form-control {
+    width: 100%;
+}
+
+.form-group {
+    padding: .5em 0;
+}
+
+.form-label {
+    padding-left: .1em;
+    font-weight: bold;
+}
+
+.form-control {
+    padding: .3em;
+    border-radius: 3px;
+    border: 1px solid #9b002b;
+}
+
+.form-label + .form-control {
+    margin-top: .5em;
+}
+
+@media all and (max-width: 768px) {
+    .form label {
+        display: block;
+    }
+}
